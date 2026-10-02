@@ -10,6 +10,8 @@
 	"onboardingConfig": {
 		"extends": ["local>mestriga-org/renovate-presets"]
 	},
+	// set config file location
+	"onboardingConfigFileName": ".github/renovate.json",
 	// forces enablement of onboarding for discovered repositories with no dependencies
 	"onboardingNoDeps": "enabled",
 	// overrides configuration from the Mend App UI with the default
