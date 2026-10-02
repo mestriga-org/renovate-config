@@ -6,7 +6,7 @@
 	"mode": "full",
 	// overrides configuration from the Mend App UI with the default
 	"onboarding": true,
-	// sets the expected autodetected value as a fallback
+	// sets the expected autodetected value as a fallback (should follow .editorconfig)
 	"onboardingConfig": {
 		"extends": ["local>mestriga-org/renovate-presets"]
 	},
