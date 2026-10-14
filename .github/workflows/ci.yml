@@ -15,7 +15,7 @@ jobs:
   git-check:
     permissions: { contents: read }
     uses: mestriga-org/public-workflows/.github/workflows/git-check.yml@main
-  renovate-preset-validate:
+  renovate-inherited-config-validate:
     permissions: { contents: read }
     uses: mestriga-org/public-workflows/.github/workflows/renovate-inherited-config-validate.yml@main
   renovate-status-check:
@@ -30,7 +30,7 @@ jobs:
     timeout-minutes: 1
     needs:
       - git-check
-      - renovate-preset-validate
+      - renovate-inherited-config-validate
       - renovate-status-check
       - workflow-lint
     steps:
